@@ -1,4 +1,4 @@
 package test.system.services;
 
-public interface UserService {
+public class UserServiceImpl {
 }
