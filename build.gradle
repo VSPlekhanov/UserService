@@ -2,10 +2,14 @@ group 'UserService'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-
+compileJava.options.encoding =
+        compileTestJava.options.encoding = 'UTF-8'
+apply plugin:  'war'
 sourceCompatibility = 1.8
 
+
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -24,11 +28,13 @@ dependencies {
     compile 'org.springframework:spring-jdbc:4.2.0.RELEASE'
     compile 'org.springframework:spring-test:4.2.0.RELEASE'
 
-    //Servlets
-    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
-    compile group: 'jstl', name: 'jstl', version: '1.2'
-
-
     //mysql
     compile 'mysql:mysql-connector-java:5.1.9'
+
+    //lombok
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+
+    //jackson
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
+
 }
