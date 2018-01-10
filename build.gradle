@@ -34,6 +34,10 @@ dependencies {
     //lombok
     compileOnly 'org.projectlombok:lombok:1.16.18'
 
+    //Servlets
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+
     //jackson
     compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
 
