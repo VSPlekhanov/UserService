@@ -7,10 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @Repository
-public class UserDaoImpl implements UserDao{
+public class UserDaoImpl implements UserDao {
 
-    public List<User> getAllUsers(){
-        return Arrays.asList(new User(1,"admin", "admin"),
-                new User(2,"Vasya", "12345"));
+    public List<User> getAllUsers() {
+        return Arrays.asList(new User(1, "admin", "admin"),
+                new User(2, "Vasya", "12345"));
     }
 }

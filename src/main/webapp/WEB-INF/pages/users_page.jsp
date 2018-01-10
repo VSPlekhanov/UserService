@@ -5,13 +5,13 @@
   Time: 6:07
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
-    <head>
-        <title>$Title$</title>
-    </head>
-    <body>
-        Hello World!
-        <a href="users/list"> Click here for see all users</a>
-    </body>
+<head>
+    <title>Users system page</title>
+</head>
+<br>
+Hello <br/>
+<a href="users/list"> Click here for see all users<br/> </a>
+<a href="users/validate"> Click here for validate<br/> </a>
 </html>

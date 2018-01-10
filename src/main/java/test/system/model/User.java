@@ -21,12 +21,12 @@ public class User {
 
         User user = (User) o;
 
-        return id == user.id;
+        return username.equals(user.username) && password.equals(user.password);
     }
 
     @Override
     public int hashCode() {
-        return (int) id;
+        return username.hashCode() + password.hashCode() * 31;
     }
 
     @Override

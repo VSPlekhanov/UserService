@@ -8,11 +8,14 @@ import test.system.model.User;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService{
-    @Autowired
+public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
-    public List<User> getAllUsers(){
+    @Autowired
+    UserServiceImpl(UserDao userDao){
+        this.userDao = userDao;
+    }
+    public List<User> getAllUsers() {
         return userDao.getAllUsers();
     }
 }
